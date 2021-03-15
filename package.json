@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/giangthang92/baitap1#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
+    "ejs-mate": "^3.0.0",
     "express": "^4.17.1"
   }
 }
