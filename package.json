@@ -1,0 +1,23 @@
+{
+  "name": "baitapnode-1",
+  "version": "1.0.0",
+  "description": "bai tap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giangthang92/baitap1.git"
+  },
+  "author": "Giangw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giangthang92/baitap1/issues"
+  },
+  "homepage": "https://github.com/giangthang92/baitap1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
