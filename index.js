@@ -9,18 +9,19 @@ app.set('view engine','ejs');
 app.set('views','./views')
 app.get('ejs',ejsengine);
 app.use('/public', express.static('./public'));
+app.engine('ejs',ejsengine);
 
 app.get('/', (req, res) => {
-    res.render('client/index');
+    res.render('client/page/index');
 });
 app.get('/post', (req, res) => {
-    res.render('client/post');
+    res.render('client/page/post');
 })
 app.get('/about', (req, res) => {
-    res.render('client/about');
+    res.render('client/page/about');
 })
 app.get('/contact', (req, res) => {
-    res.render('client/contact');
+    res.render('client/page/contact');
 })
 
 app.listen(port, () => {
