@@ -12,10 +12,25 @@ app.use('/public', express.static('./public'));
 app.engine('ejs',ejsengine);
 
 app.get('/', (req, res) => {
-    res.render('client/page/index');
+     const posttao = [
+        {title:"Man must explore",
+        description: " Manly12345", author : "Giang dai ca", createat: "16/03/2021"},
+        {title:"Man must 13233",
+        description: " Manly12343235", author : "Giang dai ca", createat: "16/03/2021"},
+        {title:"Man 214232t",
+        description: " Manly1234taddc5", author : "Giang dai ca", createat: "16/03/2021"},
+        {title:"Man must explor 23111",
+        description: " Manly123412121215", author : "Giang dai ca", createat: "16/03/2021"}
+    ];
+    res.render('client/page/index', {
+        posts: posttao
+    });
 });
 app.get('/post', (req, res) => {
-    res.render('client/page/post');
+    const posttao = {title: 'Giang',description : 'Giang AAAA',content: 'lap trinh nodejs',author:'giangw',createdAt:'13-03-2021'}
+    res.render('client/page/post', {
+        post: posttao,
+    });
 })
 app.get('/about', (req, res) => {
     res.render('client/page/about');
