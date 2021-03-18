@@ -7,7 +7,7 @@ const app = express();
 const port = 3002;
 
 app.set('view engine','ejs');
-app.set('iewsv','./views')
+app.set('views','./views')
 app.get('ejs',ejsengine);
 app.use('/public', express.static('./public'));
 app.engine('ejs',ejsengine);
